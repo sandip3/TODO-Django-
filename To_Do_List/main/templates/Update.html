@@ -2,20 +2,31 @@
 
 {% block container %}
 
+
 <form class=" container card col-6 p-4" method="post">
+    <h2 class="p-3 mb-2 bg-black text-center card shadow text-white rounded-3">Update Task</h2>
+    <hr>
     {% csrf_token %}
     <div class="mb-3">
-        <label class="form-label"><b>Title</b></label>
+        <label class="form-label fs-3"><b>Title</b></label>
         <input name="todo_title" type="text" class="form-control" placeholder="Task Title" value=" {{task.todo_title}} "
             required>
     </div>
     <div class="mb-3">
-        <label class="form-label"><b>Task</b></label>
+        <label class="form-label fs-3"><b>Task</b></label>
         <textarea name="todo_task" class="form-control" style="height: 150px;" required>
         {{task.todo_task}}
         </textarea>
     </div>
-    <button type="submit" class="btn btn-success col-2 container rounded-4 px-3 py-2">Add Task</button>
+
+    <div class="d-flex justify-content-evenly">
+        <a href="/" class="fs-5 btn col-2 container rounded-4 px-3 py-2 bg-warning text-dark">
+            <strong>Go Back</strong>
+        </a>
+        <button type="submit" class="btn btn-success col-2 container rounded-4 px-3 py-2 ">
+            <strong>Update Task</strong>
+        </button>
+    </div>
 </form>
 
 {% endblock %}
