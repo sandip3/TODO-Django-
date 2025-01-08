@@ -2,6 +2,31 @@
 
 ---
 
+## **Screenshots**
+
+1. **Home Page**:  
+   ![Home Page](./Public/IMG/Home%20Page.png)
+
+2. **Add Page**:  
+   ![Add Task](./Public/IMG/Add%20Task.png)
+
+3. **Update Page**:  
+   ![Update Task](./Public/IMG/Update%20Task.png)
+
+---
+
+## **Videos**
+
+1. **Add Function**:  
+   ![Add Function](./Public/Vid/Add.gif)
+
+2. **Update Function**:  
+   ![Update Function](./Public/Vid/Update.gif)
+
+3. **Delete Function**:  
+   ![Delete Function](./Public/Vid/Delate.gif)
+
+---
 ## **Overview**
 - The **To-Do List App** is a simple task management application built with:
   - **Django** for backend development.
@@ -100,32 +125,6 @@
 - **Takeaways**:
   - Strengthened problem-solving skills by working independently on errors.
   - Gained a deeper understanding of database and dynamic link handling.
-
----
-
-## **Screenshots**
-
-1. **Home Page**:  
-   ![Home Page](./Public/IMG/Home%20Page.png)
-
-2. **Add Page**:  
-   ![Add Task](./Public/IMG/Add%20Task.png)
-
-3. **Update Page**:  
-   ![Update Task](./Public/IMG/Update%20Task.png)
-
----
-
-## **Videos**
-
-1. **Add Function**:  
-   ![Add Function](./Public/Vid/Add.gif)
-
-2. **Update Function**:  
-   ![Update Function](./Public/Vid/Update.gif)
-
-3. **Delete Function**:  
-   ![Delete Function](./Public/Vid/Delate.gif)
 
 ---
 
