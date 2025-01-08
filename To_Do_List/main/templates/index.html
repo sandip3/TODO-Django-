@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block container %}
+<div class="container card shadow bg-white p-5 col-6 rounded-4">
+  <div class="p-3 mb-2 bg-black text-center card shadow text-white rounded-2">
+    <h2>To-Do List</h2>
+  </div>
+
+  <table class="table table-hover my-3 border P-">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Task</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in todo %}
+      <tr class="todo-item">
+        <th scope="row"> {{forloop.counter}} </th>
+        <td>{{i.todo_title}}</td>
+        <td>{{i.todo_task}}</td>
+        <td class="icon-container" id="delete"> <a href="/Delete_task/{{i.id}}">
+            <i class="ri-delete-bin-line"></i>
+          </a>
+        </td>
+        <td class="icon-container" id="edit"> <a href="/Update_task/{{i.id}}">
+            <i class="ri-edit-2-line"></i>
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-center">
+    <a class="p-3  rounded-2 text-center col-2 my-auto bg-black text-white rounded-5 shadow link-underline link-underline-opacity-0"
+      href=" {% url 'add_task' %} ">
+      <i class="ri-add-line" style="margin-right: 5px;"></i> Add Task</a>
+  </div>
+
+</div>
+
+
+{% endblock %}

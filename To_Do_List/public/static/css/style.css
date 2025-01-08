@@ -1,0 +1,18 @@
+/* Initially hide the icons */
+.icon-container i {
+  visibility: hidden; /* Hide icons by default */
+  opacity: 0; /* Make the icons invisible */
+  transition: visibility 0s, opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Show icons when hovering over the todo item */
+.todo-item:hover .icon-container i {
+  visibility: visible; /* Make icons visible */
+  opacity: 1; /* Make the icons fully visible */
+  transform: scale(1.2); /* Slightly scale the icons */
+  color: #007bff; /* Change icon color on hover */
+}
+
+#delete i {
+  color: #ff4800; /* Change icon color on hover */
+}

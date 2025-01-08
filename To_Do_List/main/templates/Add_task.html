@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+<form class=" container card col-6 p-4" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label"><b>Title</b></label>
+        <input name="todo_title" type="text" class="form-control" placeholder="Task Title" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label"><b>Task</b></label>
+        <textarea name="todo_task" class="form-control" style="height: 150px;" required>
+
+        </textarea>
+    </div>
+    <button type="submit" class="btn btn-success col-2 container rounded-4 px-3 py-2">Add Task</button>
+</form>
+
+{% endblock %}
